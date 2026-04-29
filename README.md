@@ -55,13 +55,12 @@ JavaForge includes the upgraded Deep Analysis engine:
 - Logs every step in the Deep Analysis Log tab  
 
 
-### 🧩 Multi‑File Go Module Output
+### 🧩 Multi‑File Output
 GoForge automatically detects and writes multiple files when the model outputs:
 ```
 REM FILE: Main.bas
 REM FILE: Utils.bas
 REM FILE: Program1.bas
-
 ```
 
 ### 🖥️ Full GUI (PyQt5)
