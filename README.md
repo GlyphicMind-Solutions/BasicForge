@@ -1,8 +1,8 @@
 # ⭐ BasicForge
-AI‑Assisted BASIC Code Generation Tool
-Created By: David Kistner (Unconditional Love) at GlyphicMind Solutions LLC.
+- AI‑Assisted BASIC Code Generation Tool
+- Created By: David Kistner (Unconditional Love) at GlyphicMind Solutions LLC.
 
---
+---
 
 ## Overview
 BasicForge is a standalone Forge‑Suite tool designed to generate, refactor, analyze, and manage BASIC code using an AI‑assisted workflow.
