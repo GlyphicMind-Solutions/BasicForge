@@ -1,23 +1,42 @@
-# ⭐ KotlinForge — Kotlin Code Forge
-- Created By: David Kistner (Unconditional Love)  
-- GlyphicMind Solutions LLC
+# ⭐ BasicForge
+AI‑Assisted BASIC Code Generation Tool
+Created By: David Kistner (Unconditional Love) at GlyphicMind Solutions LLC.
+
+--
 
 ## Overview
-KotlinForge is a standalone Forge‑Suite tool designed to generate, refactor, analyze, and manage Kotlin code using an AI‑assisted workflow.
-It follows the same tabbed IDE layout and workflow conventions as PythonForge, GoForge, RustForge, JavaForge, and the rest of the Forge ecosystem.
-
-KotlinForge supports:
-- Idiomatic Kotlin generation
-- Multi‑file output using // FILE: markers
-- Package‑structured Kotlin modules
-- Deep Analysis v2 (chunk → summarize → meta‑summarize → reconstruct)
-- Full GUI workflow with topic, corrections, raw output, extracted code, master code, and logs
-- Pending/saved file management with brand‑tag injection
-- Model‑family‑aware prompt building (GPT, Mistral, Qwen, DeepSeek, Phi, Llama)
+BasicForge is a standalone Forge‑Suite tool designed to generate, refactor, analyze, and manage BASIC code using an AI‑assisted workflow.
+It supports both Modern BASIC (SUB/FUNCTION, no line numbers) and Classic BASIC (line‑numbered, GOTO/GOSUB) with Auto‑Detect Mode built directly into the GUI. BasicForge follows the same tabbed IDE layout and workflow conventions as PythonForge, GoForge, RustForge, KotlinForge, JavaForge, and the rest of the Forge ecosystem.
+- BasicForge supports:
+1. Modern BASIC (structured, SUB/FUNCTION)
+2. Classic BASIC (line‑numbered, GOTO/GOSUB)
+3. Auto‑detect BASIC mode
+4. Multi‑file output using REM FILE: markers
+5. Deep Analysis v2 (chunk → summarize → meta‑summarize → reconstruct)
+6. Full GUI workflow with topic, corrections, raw output, extracted code, master code, and logs
+7. Pending/saved file management with brand‑tag injection
+8. Model‑family‑aware prompt building (GPT, Mistral, Qwen, DeepSeek, Phi, Llama)
 
 ---
 
 ## 🚀 Features
+
+### Dual BASIC Mode Support
+BasicForge supports three modes:
+1. Auto Detect — analyzes the code and chooses the correct style
+2. Modern BASIC — SUB/FUNCTION, structured flow, no line numbers
+3. Classic BASIC — line numbers, GOTO/GOSUB, retro style
+Mode selection is available via three radio buttons in the GUI.
+
+### AI BASIC Generation
+Describe what you want — BasicForge generates idiomatic BASIC:
+- Modern BASIC modules
+- Classic BASIC programs
+- SUB/FUNCTION blocks
+- Line‑numbered routines
+- Multi‑file project layouts
+- Utility modules, math routines, menus, game loops, etc.
+
 ### 🔥 Local‑First LLM Execution
 KotlinForge loads `.gguf` models defined in:
 ```
@@ -34,10 +53,8 @@ Supports:
 - Phi  
 - Any LocalAI‑compatible `.gguf` model  
 
----
-
 ### 🧠 Deep Analysis v2
-KotlinForge includes the upgraded Deep Analysis engine:
+BasicForge includes the upgraded Deep Analysis engine:
 
 - Splits large codebases into chunks  
 - Summarizes each chunk  
@@ -45,28 +62,13 @@ KotlinForge includes the upgraded Deep Analysis engine:
 - Reconstructs/refactors the entire project  
 - Logs every step in the Deep Analysis Log tab  
 
----
-
-### 🧩 Multi‑File Go Module Output
-KotlinForge automatically detects and writes multiple files when the model outputs:
+### 🧩 Multi‑File Output
+BasicForge supports structured output using:
 ```
-// FILE: Main.kt
-// FILE: utils/Helpers.kt
-// FILE: data/Models.kt
-
+REM FILE: Main.bas
+REM FILE: Utils.bas
+REM FILE: Program1.bas
 ```
-
----
-
-### 📦 Go Module‑Aware Path Support
-If the model outputs module‑structured paths, GoForge writes files exactly where they belong:
-```
-storage/pending/main.go
-storage/pending/pkg/service.go
-storage/pending/cmd/app/main.go
-```
-
----
 
 ### 🖥️ Full GUI (PyQt5)
 
@@ -86,11 +88,9 @@ storage/pending/cmd/app/main.go
    6. Forge → Pending
    7. Clear Session
 
----
-
 ### 🗂️ Storage System
 
-JavaForge organizes output into:
+BasicForge organizes output into:
 
 ```
 storage/
@@ -101,7 +101,7 @@ storage/
 
 ---
 
-## ⭐ Installation
+# ⭐ Installation
 
 1. Create a virtual environment
 
@@ -125,18 +125,14 @@ Then update:
 models/manifest.yaml
 ```
 
----
-
-## ⭐ Running GoForge
+## ⭐ Running BasicForge
 
 In your terminal, or Command Prompt type in your directory:
 ```
-python3 kotlinforge.py
+python3 basicforge.py
 ```
 
----
-
-### ⭐ Model Manifest Example
+## ⭐ Model Manifest Example
 ```
 models:
   mistral_default:
@@ -167,13 +163,11 @@ JavaForge is one of many Forge tools:
 
 8. ✅️ KotlinForge
 
-9. HTML/CSS Forge
+9. ✅️ BasicForge
 
-10. SQLForge
 
 --All tools follow the same architecture, branding, and workflow.
 
----
 
 ### ⭐License
 
