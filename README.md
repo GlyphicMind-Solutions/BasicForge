@@ -1,12 +1,11 @@
-# ⭐ BasicForge
-- AI‑Assisted BASIC Code Generation Tool
-- Created By: David Kistner (Unconditional Love) at GlyphicMind Solutions LLC.
-
----
+# ⭐ BasicForge — Basic Code Forge
+- Created By: David Kistner (Unconditional Love)  
+- GlyphicMind Solutions LLC
 
 ## Overview
 BasicForge is a standalone Forge‑Suite tool designed to generate, refactor, analyze, and manage BASIC code using an AI‑assisted workflow.
 It supports both Modern BASIC (SUB/FUNCTION, no line numbers) and Classic BASIC (line‑numbered, GOTO/GOSUB) with Auto‑Detect Mode built directly into the GUI. BasicForge follows the same tabbed IDE layout and workflow conventions as PythonForge, GoForge, RustForge, KotlinForge, JavaForge, and the rest of the Forge ecosystem.
+
 - BasicForge supports:
 1. Modern BASIC (structured, SUB/FUNCTION)
 2. Classic BASIC (line‑numbered, GOTO/GOSUB)
@@ -16,6 +15,7 @@ It supports both Modern BASIC (SUB/FUNCTION, no line numbers) and Classic BASIC 
 6. Full GUI workflow with topic, corrections, raw output, extracted code, master code, and logs
 7. Pending/saved file management with brand‑tag injection
 8. Model‑family‑aware prompt building (GPT, Mistral, Qwen, DeepSeek, Phi, Llama)
+GoForge is part of the GlyphicMind Solutions Forge Suite, alongside PythonForge, JavaScriptForge, CSharpForge, CppForge, JavaForge, and RustForge.
 
 ---
 
@@ -28,17 +28,8 @@ BasicForge supports three modes:
 3. Classic BASIC — line numbers, GOTO/GOSUB, retro style
 Mode selection is available via three radio buttons in the GUI.
 
-### AI BASIC Generation
-Describe what you want — BasicForge generates idiomatic BASIC:
-- Modern BASIC modules
-- Classic BASIC programs
-- SUB/FUNCTION blocks
-- Line‑numbered routines
-- Multi‑file project layouts
-- Utility modules, math routines, menus, game loops, etc.
-
 ### 🔥 Local‑First LLM Execution
-KotlinForge loads `.gguf` models defined in:
+JavaForge loads `.gguf` models defined in:
 ```
 models/manifest.yaml
 
@@ -53,8 +44,9 @@ Supports:
 - Phi  
 - Any LocalAI‑compatible `.gguf` model  
 
+
 ### 🧠 Deep Analysis v2
-BasicForge includes the upgraded Deep Analysis engine:
+JavaForge includes the upgraded Deep Analysis engine:
 
 - Splits large codebases into chunks  
 - Summarizes each chunk  
@@ -62,12 +54,14 @@ BasicForge includes the upgraded Deep Analysis engine:
 - Reconstructs/refactors the entire project  
 - Logs every step in the Deep Analysis Log tab  
 
-### 🧩 Multi‑File Output
-BasicForge supports structured output using:
+
+### 🧩 Multi‑File Go Module Output
+GoForge automatically detects and writes multiple files when the model outputs:
 ```
 REM FILE: Main.bas
 REM FILE: Utils.bas
 REM FILE: Program1.bas
+
 ```
 
 ### 🖥️ Full GUI (PyQt5)
@@ -88,6 +82,7 @@ REM FILE: Program1.bas
    6. Forge → Pending
    7. Clear Session
 
+
 ### 🗂️ Storage System
 
 BasicForge organizes output into:
@@ -101,7 +96,7 @@ storage/
 
 ---
 
-# ⭐ Installation
+## ⭐ Installation
 
 1. Create a virtual environment
 
@@ -125,6 +120,7 @@ Then update:
 models/manifest.yaml
 ```
 
+
 ## ⭐ Running BasicForge
 
 In your terminal, or Command Prompt type in your directory:
@@ -132,7 +128,8 @@ In your terminal, or Command Prompt type in your directory:
 python3 basicforge.py
 ```
 
-## ⭐ Model Manifest Example
+
+### ⭐ Model Manifest Example
 ```
 models:
   mistral_default:
@@ -141,11 +138,12 @@ models:
     template: mistral
 ```
 
+
 ---
 
 # ⭐ Part of the GlyphicMind Forge Suite
 
-JavaForge is one of many Forge tools:
+BasicForge is one of many Forge tools:
 
 1. ✅️ PythonForge
 
@@ -165,9 +163,13 @@ JavaForge is one of many Forge tools:
 
 9. ✅️ BasicForge
 
+8. HTML/CSS Forge (coming soon)
+
+9. SQLForge (coming soon)
 
 --All tools follow the same architecture, branding, and workflow.
 
+---
 
 ### ⭐License
 
